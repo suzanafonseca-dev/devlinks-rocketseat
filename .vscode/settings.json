@@ -15,7 +15,7 @@
   // workbench
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Omni Owl",
+  "workbench.colorTheme": "Tinacious Design (High Contrast)",
 
   // prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
