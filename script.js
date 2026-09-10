@@ -1,12 +1,7 @@
 function toggleMode() {
   const html = document.documentElement
   html.classList.toggle('light-mode')
-  /* 
-  if (html.classList.contains('light-mode')) {
-    html.classList.remove('light-mode')
-  } else {
-    html.classList.add('light-mode')
-  } */
+ 
   const avatar = document.querySelector('#profile img')
 
   if (html.classList.contains('light-mode')) {
