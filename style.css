@@ -80,12 +80,16 @@ body * {
   left: 0;
   top: 50%;
   cursor: pointer;
+
+  animation: slide-out 0.4s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color-hover);
 }
 
 .light-mode #switch button {
-  right: 0;
-  left: initial;
-  cursor: pointer;
+  animation: slide-on 0.4s forwards;
 }
 
 #switch span {
@@ -156,11 +160,30 @@ footer {
   font-size: 14px;
 }
 
+/* ajustes de responsividade */
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
   .light-mode {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/*animações de botão*/
+@keyframes slide-on {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
